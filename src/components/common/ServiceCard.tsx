@@ -20,12 +20,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, cla
       )}
       style={{ animationDelay: `${delay}s` }}
     >
-      <div className="mb-6 text-primary">{icon}</div>
-      <h3 className="text-xl font-bold mb-3">{title}</h3>
-      <p className="text-gray-600 mb-4 flex-grow">{description}</p>
-      <a href="#" className="inline-flex items-center text-primary hover:text-primary/80 transition-colors font-medium">
+      <div className="mb-8 text-primary p-4 bg-primary/5 rounded-xl inline-block">{icon}</div>
+      <h3 className="text-2xl font-bold mb-4">{title}</h3>
+      <p className="text-gray-600 mb-6 flex-grow">{description}</p>
+      <a href="#" className="inline-flex items-center text-primary hover:text-primary/80 transition-colors font-medium group">
         Learn more
-        <ArrowRight className="ml-2 h-4 w-4" />
+        <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
       </a>
     </div>
   );
